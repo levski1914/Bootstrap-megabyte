@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-9a55d8748fd46de7b7977d9ee8dee7a4.css?vsn=d"
+    >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css"
+      >
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <header>
+        <div class="container d-lg-flex d-none justify-content-between align-items-center py-2">
+            <div class="contact nav d-flex flex-row justify-content-between align-items-center"  style="width:450px">
+                <div class="nav-item d-flex align-items-center text-white">
+                    <i class="fa-regular fa-envelope me-2 fs-4"></i> megabyte@example.com </div>
+                <div class="nav-item d-flex align-items-center text-white">
+                    <i class="fa-light fa-phone me-2 fs-4"></i> 0101-010101 
+                </div>
+            </div>
+            <ul class="social nav d-flex justify-content-between align-items-center text-white-50"  style="width:100px">
+                <li class="nav-item"><i class="fa-brands fa-instagram"></i></li>
+                <li class="nav-item"><i class="fa-brands fa-facebook"></i></li>
+                <li class="nav-item"><i class="fa-brands fa-twitter"></i></li>
+                <li class="nav-item"><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="#" class="navbar-brand"><img src="https://megabyte.andevfrontend.com/images/logo.png" alt=""></a>
+                </div>
+                <form action="" class="d-lg-flex d-none" role="search" style="width: 50%;">
+                    <input type="search" placeholder="Search" class=" form-control me-2">
+                </form>
+                <ul class="navbar-nav flex-row align-items-center justify-content-between text-white fs-5 d-lg-flex d-none" style="width: 260px;">
+                    <li class="nav-item">
+                        <i class="fa-regular fa-heart"></i>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa-regular fa-cart-shopping"></i>
+                    </li>
+                    <li class="nav-item dropdown text-white">
+                        <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          My Account
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Login</a></li>
+                          <li><a class="dropdown-item" href="#">Sign up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav flex-row-reverse align-items-center d-lg-none text-white">
+                  <li class="nav-item ms-3 align-items-center justify-content-center d-flex">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                      <i class="fa-light fa-bars"></i>
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link fs-4 text-white"><i class="fa-light fa-magnifying-glass"></i></a>
+                  </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="offcanvas-lg d-lg-none offcanvas-start " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExample" style="max-width: 288px;">
+          <div class="offcanvas-header justify-content-center py-5">
+            <h5 class=""></h5>
+            <img src="	https://megabyte.andevfrontend.com/images/logo.png" alt="">
+          </div>
+          <div class="offcanvas-body px-0">
+            <ul class="navbar-nav " style="scrollbar-color:#00ADDB !important;">
+              <li class="nav-item border-bottom p-2 flex-row d-flex align-items-center">
+                <i style="color: #00ADDB;" class="me-3  fa-sharp fa-light fa-house-chimney"></i>
+                <a href="#" class="nav-link fw-bold">Home</a>
+              </li>
+               <li class="nav-item border-bottom p-2 flex-row d-flex align-items-center">
+                <i style="color: #00ADDB;" class="me-3  fa-regular fa-user"></i>
+                <a href="#" class="nav-link fw-bold">My account</a>
+              </li>
+               <li class="nav-item border-bottom p-2 flex-row d-flex align-items-center">
+                <i style="color: #00ADDB;" class="me-3  fa-light fa-heart"></i>
+                <a href="#" class="nav-link fw-bold">Whishlist</a>
+              </li>
+               <li class="nav-item border-bottom p-2 flex-row d-flex align-items-center">
+                <i style="color: #00ADDB;" class="me-3  fa-light fa-cart-shopping"></i>
+                <a href="#" class="nav-link fw-bold">Shopping cart</a>
+              </li>
+               <li class="nav-item border-bottom p-2 flex-row d-flex align-items-center">
+                <i style="color: #00ADDB;" class="me-3  fa-sharp fa-light fa-microchip"></i>
+                <a href="#" class="nav-link fw-bold">Hardware</a>
+              </li>
+               <li class="nav-item border-bottom p-2 flex-row d-flex align-items-center">
+                <i style="color: #00ADDB;" class="me-3  fa-light fa-computer-mouse-scrollwheel"></i>
+                <a href="#" class="nav-link fw-bold">Peripherals</a>
+              </li>
+               <li class="nav-item border-bottom p-2 flex-row d-flex align-items-center">
+                <i style="color: #00ADDB;" class="me-3  fa-sharp fa-light fa-computer"></i>
+                <a href="#" class="nav-link fw-bold">Computers</a>
+              </li>
+               <li class="nav-item border-bottom p-2 flex-row d-flex align-items-center">
+                <i style="color: #00ADDB;" class="me-3  fa-light fa-desktop"></i>
+                <a href="#" class="nav-link fw-bold">Monitors</a>
+              </li>
+               <li class="nav-item border-bottom p-2 flex-row d-flex align-items-center">
+                <i style="color: #00ADDB;" class="me-3  fa-light fa-print"></i>
+                <a href="#" class="nav-link fw-bold">Printers</a>
+              </li>
+               <li class="nav-item border-bottom p-2 flex-row d-flex align-items-center">
+                <i style="color: #00ADDB;" class="me-3  fa-thin fa-mobile-notch"></i>
+                <a href="#" class="nav-link fw-bold">Smartphones</a>
+              </li>
+               <li class="nav-item border-bottom p-2 flex-row d-flex align-items-center">
+                <i style="color: #00ADDB;" class="me-3  fa-light fa-circle-question"></i>
+                <a href="#" class="nav-link fw-bold">FAQ's</a>
+              </li>
+               <li class="nav-item border-bottom p-2 flex-row d-flex align-items-center">
+                <i style="color: #00ADDB;" class="me-3  fa-light fa-phone"></i>
+                <a href="#" class="nav-link fw-bold">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar navbar-expand-lg bg-white shadow-lg d-lg-block d-none">
+            <div class="container fs-5">
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Products</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Pc components</a></li>
+                  <li><a href="#" class="dropdown-item">Peripherals</a></li>
+                  <li><a href="#" class="dropdown-item">Computers</a></li>
+                  <li><a href="#" class="dropdown-item">Monitors</a></li>
+                  <li><a href="#" class="dropdown-item">Printers</a></li>
+                  <li><a href="#" class="dropdown-item">Gaming</a></li>
+                  <li><a href="#" class="dropdown-item">Tablets</a></li>
+                  <li><a href="#" class="dropdown-item">Smartphones</a></li>
+                  <li><a href="#" class="dropdown-item">Software</a></li>
+                </ul>
+              </div>
+              <a href="#" class="nav-link">Home</a>
+              <a href="#" class="nav-link">Desktops</a>
+              <a href="#" class="nav-link">Notebooks</a>
+              <a href="#" class="nav-link">Smartphones</a>
+              <a href="#" class="nav-link">Shop</a>
+              <a href="#" class="nav-link">Pages</a>
+              <a href="#" class="nav-link">FAQ's</a>
+              <a href="#" class="nav-link">Contact Us</a>
+            </div>
+
+        </div>
+    </header>
+    <main>
+      <section class="part-1 mx-auto container-fluid container-lg">
+        <div class=" mx-auto container-fluid  gx-2 row  my-3 ">
+          <div id="carouselExampleIndicators" class="carousel slide rounded col-12 col-md-8 overflow-hidden">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active rounded">
+                  <img src="https://megabyte.andevfrontend.com/images/banner/banner-1.jpg" class="w-100 d-block rounded" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://megabyte.andevfrontend.com/images/banner/banner-3.jpg" class="w-100 d-block rounded" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://megabyte.andevfrontend.com/images/banner/banner-2.jpg" class="w-100 d-block rounded" alt="">
+                </div>
+              </div>
+              
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+          <div class="col-4 d-md-block d-none overflow-hidden position-relative">
+            <img src="https://megabyte.andevfrontend.com/images/categories/sec-desktop-g.jpg" alt="" class="transition-all-300 h-100 w-100 object-cover ">
+            <div class="position-absolute top-50 start-50 translate-middle  text-white">
+                <h3>Armed pc gamer</h3>
+                <p>Choose your pc and play!</p>
+                <button class="btn" style="background-color: #00ADDB;">Shop now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="part-2 container my-5">
+        <div class="row g-5 ">
+          <div class="col-sm-6 col-lg-3 ">
+
+            <div class="nav-item item d-flex align-items-center bg-white p-3">
+              <div class="icon border border-2 rounded-circle p-3 " style="color: #00ADDB;"><i class="fs-2 fa-light fa-truck"></i></div>
+              <div class="nav-item ms-3">
+                <h3 class="fs-6">Free shipping</h3>
+                <p>Orders over $100</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="nav-item item d-flex align-items-center bg-white p-3">
+              <div class="icon border border-2 rounded-circle p-3 " style="color: #00ADDB;"><i class="fs-2 fa-light fa-money-bill"></i></div>
+              <div class="nav-item ms-3">
+                <h3 class="fs-6">Free shipping</h3>
+                <p>Orders over $100</p>
+              </div>
+            </div>
+
+          </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="nav-item item d-flex align-items-center bg-white p-3 ">
+                <div class="icon border border-2 rounded-circle p-3 " style="color: #00ADDB;"><i class="fs-2 fa-sharp fa-light fa-shield-check"></i></div>
+                <div class="nav-item ms-3">
+                  <h3 class="fs-6">Free shipping</h3>
+                  <p>Orders over $100</p>
+                </div>
+              </div>
+
+            </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="nav-item item d-flex align-items-center bg-white p-3 ">
+              <div class="icon border border-2 rounded-circle p-3 " style="color: #00ADDB;"><i class="fs-2 fa-solid fa-headset"></i></div>
+              <div class="nav-item ms-3">
+                <h3 class="fs-6">Free shipping</h3>
+                <p>Orders over $100</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        
+      </section>
+
+      <section class="part-3">
+        <div class="text-center border-bottom mb-5">
+          <h2 >Offers</h2>
+
+        </div>
+        <div class="container">
+          <div class="row gy-3">
+            <div class="col-lg col-sm-6">
+              <div class="card" >
+ 
+
+                  <img src="https://megabyte.andevfrontend.com/images/categories/pc_components/processors.jpg" style=" object-fit: cover; " class="w-100 card-img-top h-75 " alt="...">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Ryzen 5 3600x</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text"><span class="fw-bold">Size:</span> S M L XL</p>
+                  <span class="d-inline-block card-text circle rounded-circle bg-primary"></span>
+                  <span class="d-inline-block card-text circle rounded-circle bg-danger"></span>
+                  <span class="d-inline-block card-text circle rounded-circle bg-warning"></span>
+                  <span class="d-inline-block card-text circle rounded-circle bg-dark"></span>
+                  <p class="card-text"><span class="fw-bold fs-5">$37.00</span> <span class="fs-6 fw-bold text-decoration-line-through" style="color: #00ADDB;">$50.00</span></p>
+                  <a href="#" class="d-block btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-sm-6 ">
+              <div class="card" >
+
+
+                  <img src="https://megabyte.andevfrontend.com/images/cards/phones/phone_1.jpg" style=" object-fit: cover; " class="w-100 h-100 " alt="...">
+ 
+                <div class="card-body">
+                  <h5 class="card-title">Ryzen 5 3600x</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text"><span class="fw-bold">Size:</span> S M L XL</p>
+                  <span class="d-inline-block card-text circle rounded-circle bg-primary"></span>
+                  <span class="d-inline-block card-text circle rounded-circle bg-danger"></span>
+                  <span class="d-inline-block card-text circle rounded-circle bg-warning"></span>
+                  <span class="d-inline-block card-text circle rounded-circle bg-dark"></span>
+                  <p class="card-text"><span class="fw-bold fs-5">$37.00</span> <span class="fs-6 fw-bold text-decoration-line-through" style="color: #00ADDB;">$50.00</span></p>
+                  <a href="#" class="d-block btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg">
+              <div class="card" >
+
+
+                  <img src="https://megabyte.andevfrontend.com/images/cards/notebooks/note_6.jpg" style=" object-fit: cover; " class="w-100 card-img-top h-75 " alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Ryzen 5 3600x</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text"><span class="fw-bold">Size:</span> S M L XL</p>
+                  <span class="d-inline-block card-text circle rounded-circle bg-primary"></span>
+                  <span class="d-inline-block card-text circle rounded-circle bg-danger"></span>
+                  <span class="d-inline-block card-text circle rounded-circle bg-warning"></span>
+                  <span class="d-inline-block card-text circle rounded-circle bg-dark"></span>
+                  <p class="card-text"><span class="fw-bold fs-5">$37.00</span> <span class="fs-6 fw-bold text-decoration-line-through" style="color: #00ADDB;">$50.00</span></p>
+                  <a href="#" class="d-block btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg">
+              <div class="card" >
+
+                  <img src="https://megabyte.andevfrontend.com/images/categories/gaming/consoles.jpg" style=" object-fit: cover; " class="w-100 card-img-top h-75" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Ryzen 5 3600x</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text"><span class="fw-bold">Size:</span> S M L XL</p>
+                  <span class="d-inline-block card-text circle rounded-circle bg-primary"></span>
+                  <span class="d-inline-block card-text circle rounded-circle bg-danger"></span>
+                  <span class="d-inline-block card-text circle rounded-circle bg-warning"></span>
+                  <span class="d-inline-block card-text circle rounded-circle bg-dark"></span>
+                  <p class="card-text"><span class="fw-bold fs-5">$37.00</span> <span class="fs-6 fw-bold text-decoration-line-through" style="color: #00ADDB;">$50.00</span></p>
+                  <a href="#" class="d-block btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row gy-3 images my-5">
+            <div class="col-sm-6 overflow-hidden position-relative" style="height: 300px;">
+              <div class="imgs rounded" style="height: 100%; width: 100%;">
+
+                <img src="	https://megabyte.andevfrontend.com/images/categories/sec-notebooks.jpg" alt="" class="transition-all-300 h-100 w-100 object-fit-cover ">
+              </div>
+              <div class="position-absolute top-50 start-0 translate-middle text-white" style="left: 190px !important;">
+                <h3>Armed pc gamer</h3>
+                  <p>Choose your pc and play!</p>
+                  <button class="btn" style="background-color: #00ADDB;">Shop now</button>
+              </div>
+            </div>
+            <div class="col-sm-6 overflow-hidden position-relative" style="height: 300px;">
+              <div class="imgs rounded" style="height: 100%; width: 100%;">
+
+                <img src="https://megabyte.andevfrontend.com/images/categories/sec-desktops.jpg" alt="" class="transition-all-300 h-100 w-100 overflow-hidden object-fit-cover ">
+              </div>
+              <div class="position-absolute top-50 start-0 translate-middle text-white" style="left: 190px !important;">
+                  <h3>Armed pc gamer</h3>
+                  <p>Choose your pc and play!</p>
+                  <button class="btn" style="background-color: #00ADDB;">Shop now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="part-4">
+        <div class="container">
+          <h2 class="text-center border-bottom pb-3">Notebooks</h2>
+          <div class="row gy-3 my-5">
+            <div class="col-lg col-sm-6 d-md-block d-none position-relative">
+              <div class="imgs rounded" style="height: 100%; width: 100%;">
+
+                <img src="https://megabyte.andevfrontend.com/images/categories/sliders/notebooks.jpg" alt="" class="transition-all-300 h-100 w-100 overflow-hidden object-fit-cover ">
+              </div>
+              <div class="position-absolute top-50 start-0 translate-middle text-white" style="left: 130px !important;">
+                  <h3 style="color: #00ADDB;">Armed pc gamer</h3>
+                  <p>Choose your pc and play!</p>
+                  <button class="btn" style="background-color: #00ADDB;">Shop now</button>
+              </div>
+            </div>
+            <div class="col-lg col-sm-6">
+              <div class="card m-0" >
+
+
+                <img src="https://megabyte.andevfrontend.com/images/cards/notebooks/note_6.jpg" style=" object-fit: cover;height: 200px; " class="w-100 card-img-top " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ryzen 5 3600x</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"><span class="fw-bold">Size:</span> S M L XL</p>
+                <span class="d-inline-block card-text circle rounded-circle bg-primary"></span>
+                <span class="d-inline-block card-text circle rounded-circle bg-danger"></span>
+                <span class="d-inline-block card-text circle rounded-circle bg-warning"></span>
+                <span class="d-inline-block card-text circle rounded-circle bg-dark"></span>
+                <p class="card-text"><span class="fw-bold fs-5">$37.00</span> <span class="fs-6 fw-bold text-decoration-line-through" style="color: #00ADDB;">$50.00</span></p>
+                <a href="#" class="d-block btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            </div>
+            <div class="col-lg col-sm-6">
+              <div class="card" >
+
+
+                <img src="https://megabyte.andevfrontend.com/images/cards/notebooks/note_4.jpg" style=" object-fit: cover; height: 200px;" class="w-100 card-img-top " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ryzen 5 3600x</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"><span class="fw-bold">Size:</span> S M L XL</p>
+                <span class="d-inline-block card-text circle rounded-circle bg-primary"></span>
+                <span class="d-inline-block card-text circle rounded-circle bg-danger"></span>
+                <span class="d-inline-block card-text circle rounded-circle bg-warning"></span>
+                <span class="d-inline-block card-text circle rounded-circle bg-dark"></span>
+                <p class="card-text"><span class="fw-bold fs-5">$37.00</span> <span class="fs-6 fw-bold text-decoration-line-through" style="color: #00ADDB;">$50.00</span></p>
+                <a href="#" class="d-block btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            </div>
+            <div class="col-lg col-sm-6">
+              <div class="card" >
+
+
+                <img src="https://megabyte.andevfrontend.com/images/cards/notebooks/note_5.jpg" style=" object-fit: cover; height: 200px;" class="w-100 card-img-top " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ryzen 5 3600x</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"><span class="fw-bold">Size:</span> S M L XL</p>
+                <span class="d-inline-block card-text circle rounded-circle bg-primary"></span>
+                <span class="d-inline-block card-text circle rounded-circle bg-danger"></span>
+                <span class="d-inline-block card-text circle rounded-circle bg-warning"></span>
+                <span class="d-inline-block card-text circle rounded-circle bg-dark"></span>
+                <p class="card-text"><span class="fw-bold fs-5">$37.00</span> <span class="fs-6 fw-bold text-decoration-line-through" style="color: #00ADDB;">$50.00</span></p>
+                <a href="#" class="d-block btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h2 class="text-center border-bottom pb-3">Smartphones</h2>
+          <div class="row gy-3 my-5">
+            <div class="col d-md-block d-none position-relative">
+              <div class="imgs rounded" style="height: 100%; width: 100%;">
+
+                <img src="https://megabyte.andevfrontend.com/images/categories/sliders/smartphones.jpg" alt="" class="transition-all-300 h-100 w-100 overflow-hidden object-fit-cover ">
+              </div>
+              <div class="position-absolute top-50 start-0 translate-middle text-white" style="left: 130px !important;">
+                  <h3 style="color: #00ADDB;" class="text-uppercase">Smartphones</h3>
+                  <p>Choose your smartphone now!</p>
+                  <button class="btn" style="background-color: #00ADDB;">Shop now</button>
+              </div>
+            </div>
+            <div class="col-lg col-sm-6">
+              <div class="card m-0" >
+
+
+                <img src="https://megabyte.andevfrontend.com/images/cards/phones/phone_4.jpg" style=" object-fit: cover;height: 200px; " class="w-100 card-img-top h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ryzen 5 3600x</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"><span class="fw-bold">Size:</span> S M L XL</p>
+                <span class="d-inline-block card-text circle rounded-circle bg-primary"></span>
+                <span class="d-inline-block card-text circle rounded-circle bg-danger"></span>
+                <span class="d-inline-block card-text circle rounded-circle bg-warning"></span>
+                <span class="d-inline-block card-text circle rounded-circle bg-dark"></span>
+                <p class="card-text"><span class="fw-bold fs-5">$37.00</span> <span class="fs-6 fw-bold text-decoration-line-through" style="color: #00ADDB;">$50.00</span></p>
+                <a href="#" class="d-block btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            </div>
+            <div class="col-lg col-sm-6">
+              <div class="card" >
+
+
+                <img src="https://megabyte.andevfrontend.com/images/cards/phones/phone_5.jpg" style=" object-fit: cover; height: 200px;" class="w-100 card-img-top h-100 " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ryzen 5 3600x</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"><span class="fw-bold">Size:</span> S M L XL</p>
+                <span class="d-inline-block card-text circle rounded-circle bg-primary"></span>
+                <span class="d-inline-block card-text circle rounded-circle bg-danger"></span>
+                <span class="d-inline-block card-text circle rounded-circle bg-warning"></span>
+                <span class="d-inline-block card-text circle rounded-circle bg-dark"></span>
+                <p class="card-text"><span class="fw-bold fs-5">$37.00</span> <span class="fs-6 fw-bold text-decoration-line-through" style="color: #00ADDB;">$50.00</span></p>
+                <a href="#" class="d-block btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            </div>
+            <div class="col-lg col-sm-6">
+              <div class="card" >
+
+
+                <img src="https://megabyte.andevfrontend.com/images/cards/phones/phone_6.jpg" style=" object-fit: cover; height: 200px;" class="w-100 card-img-top h-50 " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ryzen 5 3600x</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"><span class="fw-bold">Size:</span> S M L XL</p>
+                <span class="d-inline-block card-text circle rounded-circle bg-primary"></span>
+                <span class="d-inline-block card-text circle rounded-circle bg-danger"></span>
+                <span class="d-inline-block card-text circle rounded-circle bg-warning"></span>
+                <span class="d-inline-block card-text circle rounded-circle bg-dark"></span>
+                <p class="card-text"><span class="fw-bold fs-5">$37.00</span> <span class="fs-6 fw-bold text-decoration-line-through" style="color: #00ADDB;">$50.00</span></p>
+                <a href="#" class="d-block btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <secction class="part-5">
+        <div class="container my-5">
+          <h2 class="text-center border-bottom py-3 mb-5">Categories</h2>
+          <div class="row row-cols-md-4 row-cols-2">
+            <div class="col">
+              <i class="fa-sharp fa-light fa-computer-classic"></i>
+              <p>Video Cards</p>
+            </div>
+            <div class="col">
+              <i class="fa-light fa-calendar-week"></i>
+              <p>Power Supplies</p>
+            </div>
+            <div class="col">
+              <i class="fa-sharp fa-light fa-chess-board"></i>
+              <p>Motherboard</p>
+            </div>
+            <div class="col">
+              <i class="fa-sharp fa-light fa-microchip"></i>
+              <p>Processors</p>
+            </div>
+            <div class="col">
+              <i class="fa-light fa-memory"></i>
+              <p>Memory Ram</p>
+            </div>
+            <div class="col">
+              <i class="fa-sharp fa-light fa-disc-drive"></i>
+              <p>Hard Drives</p>
+            </div>
+            <div class="col">
+              <i class="fa-light fa-usb-drive"></i>
+              <p>SSD</p>
+            </div>
+            <div class="col">
+              <i class="fa-light fa-computer"></i>
+              <p>Cases</p>
+            </div>
+          </div>
+        </div>
+      </secction>
+    </main>
+    <footer>
+      <div class="container mx-auto row justify-content-center  py-5" style="color: rgb(156, 163, 175);">
+        <div class="col-md col-12 mb-3">
+          <img src="https://megabyte.andevfrontend.com/images/logo.png"  alt="">
+          <ul class="navbar-nav">
+            <li class="nav-item my-1 mt-4">
+              <i class="fa-regular fa-envelope me-2 fs-4"></i> 
+              <span>megabyte@example.com</span>
+            </li>
+            <li class="nav-item my-1">
+              <i class="fa-light fa-phone me-2 fs-4"></i>
+              <span>0101-010101</span>
+            </li>
+            <li class="nav-item my-1">
+              <i class="fa-sharp fa-solid fa-location-dot me-2 fs-4"></i>
+              <span>Colón 0101, Olavarría</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <p class="text-white fw-bold m-0">Useful Links</p>
+          <ul class="navbar-nav d-flex flex-wrap" style="height: 300px;">
+            <li class="nav-item"><a href="#" class="nav-link">Terms & Conditions</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">New products</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Best sales</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Secure payment</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Delivery</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Legal notice</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"> About us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"> Contact us </a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Stores</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg col-12">
+          <p class="fw-bold text-white">Be the first to know it</p>
+          <p>Subscribe to receive updates on our store and special offers</p>
+          <form action="" class="d-flex" role="search" style="">
+            <input type="search" placeholder="Search" class=" form-control me-2">
+        </form>
+        <ul class="social nav d-flex justify-content-between align-items-center text-white-50 my-3"  style="width:150px">
+          <li class="nav-item instagram-before overflow-hidden"><i class="fa-brands fa-instagram"></i></li>
+          <li class="nav-item facebook"><i class="fa-brands fa-facebook"></i></li>
+          <li class="nav-item twitter"><i class="fa-brands fa-twitter"></i></li>
+          <li class="nav-item youtube"><i class="fa-brands fa-youtube"></i></li>
+      </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,275 @@
+
+*{
+    scrollbar-color: red green !important;
+}
+
+
+body{
+    background-color: #F5F7F8 !important;
+}
+
+header{
+    background-color: #007999;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.contact .nav-item i{
+    color:rgb( 0 , 173 , 219 );
+}
+
+.nav-link{
+    color: #fff;
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: #333855 !important;
+    border-radius: 50%;
+    height: 10px !important;
+    width: 10px !important;
+}
+
+.carousel-indicators .active{
+    background-color: #00ADDB !important;
+}
+
+.carousel-control-prev-icon{
+    /* border: 1px solid red !important; */
+    transition: all .3s;
+    transform: translateX(-80px) !important;
+    background-color: rgba(0, 0, 0, .6);
+
+}
+
+.carousel-control-prev-icon:hover{
+    background-color: #00ADDB;
+
+}
+
+.carousel:hover .carousel-control-prev-icon{
+    transform:translateX(0px) !important;
+}
+
+
+.carousel-control-next-icon{
+    /* border: 1px solid red !important; */
+    transition: all .3s;
+    transform: translateX(80px) !important;
+    background-color: rgba(0, 0, 0, .6);
+
+}
+
+.carousel-control-next-icon:hover{
+    background-color: #00ADDB;
+}
+
+.carousel:hover .carousel-control-next-icon{
+    transform:translateX(0px) !important;
+}
+
+
+
+.item{
+    transition: all .4s;
+}
+.part-2 .navbar .item:hover{
+    box-shadow: 0 0 5px #000;
+    transition: all .4s ease-in-out;
+}
+
+.circle{
+    width: 13px !important;
+    height: 13px !important;
+    margin: 0 .1em;
+    margin-bottom: 1rem;
+}
+
+.imgs {
+    overflow: hidden !important;
+    transition: all .3s;
+}
+
+.imgs img{
+    transition: all .3s;
+}
+
+.imgs img:hover {
+    transform: scale(1.1);
+    
+}
+
+.part-5 .col{
+    border: 1px solid #E9EBEE !important;
+    text-align: center;
+    /* padding: 1em;     */
+    font-size: 2.5rem;
+    color: #00ADDB;
+    transition: all .3s;
+}
+
+.part-5 .col p{
+    color: #333855;
+    font-size: 1.5rem;
+}
+
+.part-5 .col:hover{
+    box-shadow:   0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px
+}
+
+footer{
+    background-color: #0B0D17;
+}
+
+footer i{
+    color: #00ADDB;
+}
+
+footer .col li:hover {
+    list-style:disc;
+}
+
+footer .col li .nav-link:hover{
+    color: #fff !important;
+}
+
+footer .social li i{
+
+    color: #fff;
+}
+
+footer .social li{
+    width: 20px;
+    height: 20px;
+    background-color: #2F313A;
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+footer .social .instagram-before i{
+    z-index: 2;
+}
+
+footer .social .instagram-before{
+    position: relative !important;
+}
+
+.instagram-before::before{
+    content: "";
+    display: block;
+    border-radius: 50%;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+
+}
+
+
+.instagram-before:hover::before{
+    opacity: 1;
+}
+footer .social .facebook i{
+    z-index: 2;
+}
+
+footer .social .facebook{
+    position: relative !important;
+}
+
+.facebook::before{
+    content: "";
+    display: block;
+    border-radius: 50%;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #1877F2;
+
+}
+
+
+.facebook:hover::before{
+    opacity: 1;
+}
+
+
+
+footer .social .twitter i{
+    z-index: 2;
+}
+
+footer .social .twitter{
+    position: relative !important;
+}
+
+.twitter::before{
+    content: "";
+    display: block;
+    border-radius: 50%;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #1DA1F2;
+
+}
+
+
+.twitter:hover::before{
+    opacity: 1;
+
+
+}
+footer .social .youtube i{
+    z-index: 2;
+}
+
+footer .social .youtube{
+    position: relative !important;
+}
+
+.youtube::before{
+    content: "";
+    display: block;
+    border-radius: 50%;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #FF0000;
+
+}
+
+
+.youtube:hover::before{
+    opacity: 1;
+}
+
+.offcanvas-header{
+    background-color: #007999;
+}
+
+.offcanvas-body::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb{
+    background:#00ADDB;
+    border-radius: 10px;
+}
